@@ -1,0 +1,6 @@
+bmcgeheeswati/what_is_my_public_IP:
+  Build:
+    - echo "Nothing to Build"
+  PreInstall:
+    - publicip=$(curl -s ident.me)
+    - echo "Public IP $publicip"
